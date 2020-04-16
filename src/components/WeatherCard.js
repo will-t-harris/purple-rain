@@ -1,8 +1,8 @@
 import React from "react";
 
-import SunIcon from "./icons/SunIcon";
-import RainIcon from "./icons/RainIcon";
-import CloudIcon from "./icons/CloudIcon";
+import SunIcon from "../icons/SunIcon";
+import RainIcon from "../icons/RainIcon";
+import CloudIcon from "../icons/CloudIcon";
 
 const WeatherCard = ({ day, icon, tempFarenheit, tempCelcius }) => {
 	const setIcon = (icon) => {
