@@ -19,7 +19,7 @@ const WeatherCard = ({ day, icon, tempFarenheit, tempCelcius }) => {
 	};
 	return (
 		<div
-			className="block p-4 mt-4 mx-2 border-4 border-gray-400"
+			className="p-4 mt-4 mx-2 border-4 border-gray-400"
 			onClick={() => setIsOpen(!isOpen)}
 		>
 			{!isOpen ? (
@@ -32,7 +32,7 @@ const WeatherCard = ({ day, icon, tempFarenheit, tempCelcius }) => {
 					</div>
 				</>
 			) : (
-				<div className="block">{isOpen && <WeatherCardHourlyInfo />}</div>
+				<div>{isOpen && <WeatherCardHourlyInfo />}</div>
 			)}
 		</div>
 	);
